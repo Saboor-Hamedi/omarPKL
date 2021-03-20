@@ -211,7 +211,7 @@ CREATE TABLE `eletter` (
 
 LOCK TABLES `eletter` WRITE;
 /*!40000 ALTER TABLE `eletter` DISABLE KEYS */;
-INSERT INTO `eletter` VALUES (1,' Surat Keterangan Aktif Kuliah'),(2,'Surat Kelakuan Baik'),(3,'Surat Rekomendasi Beasiswa'),(4,'Surat Buka Rekening'),(5,'Surat Permohonan Wawancara'),(6,' Surat Permohonan Magang '),(7,'Surat Permohonan Penelitian / Riset Kelompok'),(8,'Surat Permohonan Praktek Kerja Lapangan (PKL) '),(9,'Surat Permohonan Praktek Kerja Lapangan (PKL) Kelompok'),(10,'Surat Tunjangan PNS'),(11,'Surat Permohonan Observasi/Pengamatan'),(12,'Surat Pembimbing Skripsi'),(13,'Surat Pembimbing Praktek Kerja Lapangan (PKL)'),(14,'Surat Keterangan Sebagai Aktivitis Organisasi '),(15,'Surat Keterangan Bebas Pelanggaran Kode Etik Mahasiswa '),(16,'Surat Keterangan Tidak Menerima Beasiswa'),(17,' Surat Keterangan Lulus (SKL)'),(18,' Surat Pembimbing Thesis'),(19,' Surat Permohonan Bebas Pustaka'),(20,'Surat Keterangan Kehilangan KTM'),(21,' Surat Perubahan Status AIS'),(22,' Surat Keterangan (Bahasa Inggris)'),(23,' Surat Permohonan Cuti'),(24,' Surat Pengunduran Diri'),(25,' Surat Rekomendasi S2'),(26,' Surat Undangan Seminar Proposal/Hasil'),(27,' Surat Undangan Sidang Skripsi'),(28,' Surat Rekomendasi'),(29,' Surat Keterangan Aktif Kuliah Untuk Keperluan Tertentu');
+INSERT INTO `eletter` VALUES (1,'Scholarship Recommendation Letter'),(2,'PKL Letter');
 /*!40000 ALTER TABLE `eletter` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -736,4 +736,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-03-13 11:16:34
+-- Dump completed on 2021-03-20  8:37:17

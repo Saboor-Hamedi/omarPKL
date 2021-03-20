@@ -90,7 +90,7 @@ if ($_SESSION['nim'] === NULL) {
                 <form>
                     <select class="form-control " name="id_letter" id="id_letter">
                         <?php $datas = $dataCon->FetchData('eletter'); ?>
-                        <option value="0">Pilih Surat</option>
+                        <option value="0">Select Your Letter</option>
                         <?php foreach ($datas as $data) { ?>
                             <option value="<?php echo ($data['id']); ?>">
                                 <?php echo  ucwords($data['letters']); ?>

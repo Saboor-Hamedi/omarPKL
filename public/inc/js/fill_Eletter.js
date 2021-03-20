@@ -8,7 +8,7 @@ $(function () {
       // else {
       //    $('.hidePKL').hide();
       // }
-      if ( this.value == '3')
+      if ( this.value == '1')
       {
         $(".hideRecommendationScholarshipLetter").show();
       }
@@ -16,7 +16,7 @@ $(function () {
       {
         $(".hideRecommendationScholarshipLetter").hide();
       }
-      if ( this.value == '8')
+      if ( this.value == '2')
       {
         $(".hidePKL").show();
       }
