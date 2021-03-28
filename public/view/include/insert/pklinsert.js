@@ -1,8 +1,7 @@
 // inser data into pkl table
-$(document).ready(function () {
-    $('#pklsubmitBnt').on('click', function (e) {
+$(document).ready(function() {
+    $('#pklsubmitBnt').on('click', function(e) {
         e.preventDefault();
-
         let agencyTitle = $('#agencyTitle').val();
         let agencyID = $('#agencyID').val();
         let agencryDescription = $('#agencryDescription').val();
@@ -50,18 +49,18 @@ $(document).ready(function () {
                 datepicker2: datepicker2,
                 typesofAgencyLetter: typesofAgencyLetter
             },
-            success: function (data) {
+            success: function(data) {
                 $('.custome-alert').html(data).show().fadeIn("slow");
-                $('.hidePKL').hide();
+                $('.pkl__form').hide();
                 $('form').trigger('reset');
-                setTimeout(function () {
+                setTimeout(function() {
                     $('.custome-alert').html('').hide();
                 }, 3000);
             },
         });
     });
     // close form
-    $('.closePKLForm').on('click', function (e) {
+    $('.close_forms').on('click', function(e) {
         e.preventDefault();
         $('.hideOption').hide();
         $('.custome-alert').hide();
@@ -69,7 +68,7 @@ $(document).ready(function () {
         location.reload();
     });
     // delete letter 
-    $('.deleteletter').on('click', function () {
+    $('.deleteletter').on('click', function() {
         var id = $(this).attr('id');
         var el = this;
         var confirmalert = confirm("Are you sure?");
@@ -78,10 +77,10 @@ $(document).ready(function () {
                 type: 'POST',
                 url: '/../../../app/insertData/deleteAgency.php',
                 data: { id: id },
-                success: function (data) {
+                success: function(data) {
                     // Remove row from HTML Table
                     $(el).closest('tr').css('background', 'tomato');
-                    $(el).closest('tr').fadeOut(800, function () {
+                    $(el).closest('tr').fadeOut(800, function() {
                         $(this).remove();
                     });
                 }
@@ -89,4 +88,3 @@ $(document).ready(function () {
         }
     });
 });
-
